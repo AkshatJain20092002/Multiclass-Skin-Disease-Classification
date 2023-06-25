@@ -4,4 +4,4 @@ A Convolution Neural Network Model that can classify whether a person is having 
 Training data is taken from kaggle:  https://www.kaggle.com/datasets/dipuiucse/monkeypoxskinimagedataset
 
 
-Model is still not accurate, shows same result for mealses and chickenpox as same sometimes (under improvement)
+Model is still not accurate, shows same result for mealses and normal as same sometimes (under improvement)
