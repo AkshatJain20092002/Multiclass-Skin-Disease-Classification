@@ -3,5 +3,6 @@ A Convolution Neural Network Model that can classify whether a person is having 
 
 Training data is taken from kaggle:  https://www.kaggle.com/datasets/dipuiucse/monkeypoxskinimagedataset
 
+An improved model is created using VGG16 transfer learning that can easily predict any of the 4 cases
 
-Model is still not accurate, shows same result for mealses and normal as same sometimes (under improvement)
+
