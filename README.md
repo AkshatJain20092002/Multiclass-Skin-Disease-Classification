@@ -27,8 +27,8 @@ The enhanced model shows the advantages of leveraging pre-trained models like VG
 ![2 2](https://github.com/AkshatJain20092002/Skin-Disease-Classification/assets/106154057/c77f3700-24f9-4b36-923e-5c0238957630)
 
 ### With DENSETNET201
-![image](https://github.com/AkshatJain20092002/Skin-Disease-Classification/assets/106154057/d16a5ace-fe7a-420a-b553-98b9d123111b)
-![image](https://github.com/AkshatJain20092002/Skin-Disease-Classification/assets/106154057/4ee0ca9d-796d-4a5d-8596-72a0c943e5eb)
+![image](https://github.com/AkshatJain20092002/Skin-Disease-Classification/assets/106154057/cab4523d-ac79-4393-909b-82e99d50910e)
+![image](https://github.com/AkshatJain20092002/Skin-Disease-Classification/assets/106154057/e202f777-dbcd-4380-b684-bfc9e05062b9)
 
 ### With VGG16
 ![1](https://github.com/AkshatJain20092002/Skin-Disease-Classification/assets/106154057/36da59c0-abd8-49c5-a628-37d055da5938)
