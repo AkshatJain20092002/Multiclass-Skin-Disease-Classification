@@ -4,6 +4,7 @@ A Convolution Neural Network Model that can classify whether a person is having 
 Training data is taken from kaggle:
 
 https://www.kaggle.com/datasets/dipuiucse/monkeypoxskinimagedataset
+
 https://www.kaggle.com/datasets/shubhamgoel27/dermnet
 
 ## Portraying the Use of Transfer Learning
