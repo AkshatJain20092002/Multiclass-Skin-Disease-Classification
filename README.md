@@ -2,6 +2,7 @@
 A Convolution Neural Network Model that can classify whether a person is having Acne and Rosacea Photos, Eczema Photos, Melanoma Skin Cancer Nevi and Moles, Psoriasis pictures Lichen Planus and related diseases, Chickenpox, Measles, Monkeypox or the person is normal with the help of image.
 
 Training data is taken from kaggle:
+
 https://www.kaggle.com/datasets/dipuiucse/monkeypoxskinimagedataset
 https://www.kaggle.com/datasets/shubhamgoel27/dermnet
 
