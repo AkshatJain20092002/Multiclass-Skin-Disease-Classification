@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <title>Classification Result</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1f1f1f; /* Dark background color */
+            color: #fff;
+        }
+        body {
+            background-color: #000000; /* Dark background color */
+            color: #fff; /* White text color */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dashboard {
+            background-color: #2c3e50; /* Dark blue background for the dashboard */
+            color: #ecf0f1; /* Light text color for dashboard */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Center items vertically */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+        }
+
+        .dashboard a {
+            color: #ecf0f1; /* Light text color for links */
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: bold; /* Make the links bold */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3498db; /* Blue heading color */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #3498db; /* Blue border around the image */
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.5); /* Blue shadow */
+        }
+
+        .predictions {
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .dropdown .dropbtn {
+            margin-top: 20px
+        }
+
+        .left-side,
+        .right-side {
+            width: 48%;
+            box-sizing: border-box;
+        }
+
+        .left-side {
+            background-color: #2c3e50; /* Dark blue background */
+            padding: 20px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .right-side {
+            background-color: #34495e; /* Darker blue background */
+            padding: 20px;
+        }
+
+        h2 {
+            color: #3498db; /* Blue heading color */
+        }
+
+        p {
+            color: #ecf0f1; /* Light text color */
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #3498db; /* Blue link color */
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #2980b9; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="{{ url_for('static', filename='Project_report.docx') }}" target="_blank">Research Paper</a>
+        <div class="dropdown">
+          <button class="dropbtn">Models
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="index">VGG16</a>
+            <a href="index2">DENSENET201</a>
+          </div>
+        </div>
+      </div>
+    <div class="dashboard">
+        <h1>Skin Disease Classification</h1>
+    </div>
+    <h1>Classification Result</h1>
+    <img src="{{ image_path }}" alt="Uploaded Image">
+
+    <div class="predictions">
+        <div class="left-side">
+            <h2>VGG16/Skin Disease Prediction:</h2>
+            <p>Predicted Skin Disease: {{ predicted_skin_disease }}</p>
+        </div>
+    </div>
+
+    <a href="/">Back to Upload</a>
+</body>
+</html>

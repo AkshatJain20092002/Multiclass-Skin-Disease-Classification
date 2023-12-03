@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Skin Disease Classification</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="{{ url_for('static', filename='Project_report.docx') }}" target="_blank">Research Paper</a>
+        <div class="dropdown">
+          <button class="dropbtn">Models
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="index">VGG16</a>
+            <a href="index2">DENSENET201</a>
+          </div>
+        </div>
+      </div>
+    <div class="dashboard">
+        <h1>Skin Disease Classification(VGG16)</h1>
+    </div>
+    <header>
+    <form method="POST" action="/result" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="Upload and Classify">
+    </form>
+    </header>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    
+    {% if image_path %}
+    <img src="{{ image_path }}" alt="Uploaded Image">
+    {% endif %}
+</body>
+</html>

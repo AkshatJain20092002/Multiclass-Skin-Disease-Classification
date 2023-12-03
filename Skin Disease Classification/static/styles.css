@@ -1,0 +1,202 @@
+body{
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #905252;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+h2{
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.holder-img{
+    margin-left:33%;
+}
+.container{
+    width: 100%;
+    height: 20h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.card{
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    width: 15%;
+    height: 15%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,56,152,1) 57%, rgba(22,156,184,1) 100%);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 48px;
+    border-radius: 5%;
+}
+.card:hover{
+    transform: scale(1.1);
+
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.form-container{
+
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 10%; */
+    flex-direction: column;
+
+}
+h3{
+    display: flex;
+    text-align: center;
+    font-size: 28px;
+    color: #0f0707;
+    margin-top: 20px;
+}
+
+label{
+    display: flex;
+    font-size: 24px;
+    color: #0f0707;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+input[type=text]{
+    width: 30rem;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #0f0707;
+    margin-left: 20px;
+    margin-top: 0px;
+    padding-left: 10px;
+}
+.holder-img {
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure block-level behavior for margin auto to work */
+    border: 2px solid white; /* Add a white border around the image */
+    max-width: 50%; /* Limit the maximum width of the image to 50% of the container */
+}
+
+/* Rest of your existing styles... */
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#sub-btn{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 45%;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 5vh;
+    border:none;
+    color: wheat;
+    font-size:24px;
+    background-color: rgb(42, 20, 121);
+}
+#sub-btn:hover{
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for small screens here */
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown {
+    float: none;
+  }
+}
+
+
